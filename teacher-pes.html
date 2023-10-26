@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Teaching Aptitude Test<br>
+  (Тест на педагогічну придатність)</title>
+  <style>
+    .question {
+      margin-bottom: 10px;
+      font-family: Arial, sans-serif;
+    }
+
+    .btn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      color: blue;
+      font-size: 24px;
+      font-family: Arial, sans-serif;
+    }
+    
+    h2 {
+      color: Gray;
+      font-size: 18px;
+      font-family: Arial, sans-serif;
+    }    
+
+    h3 {
+      color: green;
+      font-family: Arial, sans-serif;
+    }
+    
+    tr:nth-child(even) {
+        background-color: #F2F2F2; /* Светло-серый цвет для четных строк */
+    }
+
+    tr:nth-child(odd) {
+        background-color: #FFFFFF; /* Белый цвет для нечетных строк */
+    }
+    
+    td {
+        padding: 5px; /* Добавляем отступы в ячейках для лучшей читаемости */
+    }
+  </style>
+</head>
+<body>
+  <h1>Pedagogical Suitability of Future Physical Education Teachers in Schools<br>
+  Педагогічна придатність майбутнього учителя фізичної культури у школі</h1>
+  <p>Адаптація тесту - Sergii Iermakov. Результат буде записано у файл answers.csv. 
+	  <br>Результати у файлі answers.csv структуровано для подальшого статистичного аналізу. <br>
+	  Файл answers.csv вислати на наш e-mail або e-mail дослідника, який запросив Вас до участі у тестуванні.</p>
+  <p>Після "Зберегти відповіді": наприкінці цієї сторінки буде показана таблиця з результатами. <br>
+  Рекомендуємо виділити таблицю, скопіювати і вставити у документ WORD. <br>
+  Ця таблиця призначена для респондента.</p>
+  <div class="question">
+    <h3>Псевдонім:</h3>
+    <input type="text" id="alias">
+  </div>
+  <div class="question">
+    <h3>Вік:</h3>
+    <input type="number" id="age">
+  </div>
+  <div class="question">
+    <h3>Стать:</h3>
+    <label><input type="radio" name="gender" value="Чоловіча"> Чоловіча</label>
+    <label><input type="radio" name="gender" value="Жіноча"> Жіноча</label>
+  </div>
+  <div class="question">
+    <h3>Рік навчання:</h3>
+    <input type="number" id="yearOfStudy">
+  </div>
+  <div class="question">
+    <h3>Спеціальність:</h3>
+    <input type="text" id="specialty">
+  </div>  
+  <div class="question">
+    <h3>Назва тесту</h3>
+    <label><input type="radio" name="futureSpecialization" value="Учитель Фізичної Культури"> Учитель Фізичної Культури</label>
+    <label><input type="radio" name="futureSpecialization" value="Тренер"> Тренер</label>
+    <label><input type="radio" name="futureSpecialization" value="Магістр Аспірант"> Магістр Аспірант</label>
+  </div>
+  
+<div class="question">
+<h1>1. Знання у сфері фізичної культури	</h1>
+  </div>
+  	
+  <!-- Питання 1 -->
+  <div class="question">
+    <h3>Питання 1: Які основні принципи тренування необхідно враховувати під час розробки програми для учнів різного віку та фізичної підготовки?</h3>
+    <label><input type="radio" name="question1" value="a"> a. Принцип прогресивного навантаження</label><br>
+    <label><input type="radio" name="question1" value="b"> b. Принцип індивідуалізації та адаптації</label><br>
+    <label><input type="radio" name="question1" value="c"> c. Принцип одноманітності та монотонності</label><br>
+    <label><input type="radio" name="question1" value="d"> d. Принцип випадковості та спонтанності</label><br>
+  </div>
+  
+  <!-- Питання 2 -->
+  <div class="question">
+    <h3>Питання 2: Роль анатомії та фізіології у контексті фізичної культури. Які аспекти цих наук важливі для організації тренувань і занять?</h3>
+    <label><input type="radio" name="question2" value="a"> a. Вивчення історії фізичної культури</label><br>
+    <label><input type="radio" name="question2" value="b"> b. Розуміння будови та функціонування органів та систем організму</label><br>
+    <label><input type="radio" name="question2" value="c"> c. Аналіз соціологічних аспектів фізичної активності</label><br>
+    <label><input type="radio" name="question2" value="d"> d. Навчання правилам безпеки на заняттях</label><br>
+  </div>
+  
+  <!-- Питання 3 -->
+  <div class="question">
+    <h3>Питання 3: Які методики навчання та планування занять ви знаєте?</h3>
+    <label><input type="radio" name="question3" value="a"> a. Методика випадкового вибору вправ</label><br>
+    <label><input type="radio" name="question3" value="b"> b. Методика виняткового використання групових занять</label><br>
+    <label><input type="radio" name="question3" value="c"> c. Методика навантажень без урахування вікових особливостей</label><br>
+    <label><input type="radio" name="question3" value="d"> d. Методика диференціації та індивідуалізації навчання</label><br>
+  </div>
+  
+  <!-- Питання 4 -->
+  <div class="question">
+    <h3>Питання 4: Назвіть правила та техніку виконання спортивної дисципліни, які ви вважаєте важливими для включення до навчальної програми.</h3>
+    <label><input type="radio" name="question4" value="a"> a. Правила та техніка шахів</label><br>
+    <label><input type="radio" name="question4" value="b"> b. Правила та техніка тенісу</label><br>
+    <label><input type="radio" name="question4" value="c"> c. Правила та техніка акробатики</label><br>
+    <label><input type="radio" name="question4" value="d"> d. Правила та техніка плавання</label><br>
+  </div> 
+ 
+ <div class="question">
+<h1>2. Педагогічні навички</h1>
+  </div>
+   
+  <!-- Питання 5 -->
+  <div class="question">
+    <h3>Питання 5: Які педагогічні методи можуть бути використані для ефективної організації навчального процесу під час уроків фізичної культури?</h3>
+    <label><input type="radio" name="question5" value="a"> a. Використання "методу 10-10-10", який полягає в розбитті уроку на 10-хвилинні інтервали активної фізичної діяльності, 10-хвилинні інтервали зосередження на теоретичних матеріалах та 10-хвилинні перерви для відпочинку.</label><br>
+    <label><input type="radio" name="question5" value="b"> b. Застосування "методу зворотного зв'язку", коли учні оцінюють свої досягнення на уроці фізичної культури та вносять пропозиції щодо його поліпшення.</label><br>
+    <label><input type="radio" name="question5" value="c"> c. Використання "методу проектної роботи", де учні ведуть власні дослідження та презентують результати, що сприяє їх активному залученню та самостійному навчанню.</label><br>
+    <label><input type="radio" name="question5" value="d"> d. Різноманітність методів навчання та активне залучення учнів до навчального процесу</label><br>
+  </div>   
+  
+    <!-- Питання 6 -->
+  <div class="question">
+    <h3>Питання 6: Яким чином вчитель фізичної культури може мотивувати учнів до занять фізичною активністю?</h3>
+    <label><input type="radio" name="question6" value="a"> a. Використання методу, де вчитель стимулює учнів до розробки власних фізичних тренувань або спортивних рухів, що дає їм можливість виразити свою унікальність та творчість.</label><br>
+    <label><input type="radio" name="question6" value="b"> b. Використання підходу, де учні беруть участь у змаганнях та спортивних іграх з можливістю отримати грошову винагороду та визнання від своїх однокласників</label><br>
+    <label><input type="radio" name="question6" value="c"> c. Створення цікавих та різноманітних уроків з ігровими елементами</label><br>
+    <label><input type="radio" name="question6" value="d"> d. Застосування "методу нагородження", де вчитель вручає на кожному уроці спеціальні медалі або сертифікати тим учням, які досягають найкращих результатів у фізичних заняттях.</label><br>
+  </div>  
+  
+    <!-- Питання 7 -->
+  <div class="question">
+    <h3>Питання 7: Які методи контролю успішності учнів під час уроків фізичної культури можна застосовувати?</h3>
+    <label><input type="radio" name="question7" value="a"> a. Застосування  письмових тестів, де учні відповідають на запитання та завдання, пов'язані з фізичною культурою, для оцінки їх знань.</label><br>
+    <label><input type="radio" name="question7" value="b"> b. Різноманітність методів контролю, включаючи практичні завдання, тестування та нагляд за виконанням вправ</label><br>
+    <label><input type="radio" name="question7" value="c"> c. Застосування самооцінок: учні оцінюють свої власні досягнення та прогрес у фізичних вправах або спортивних активностях.</label><br>
+    <label><input type="radio" name="question7" value="d"> d. Використання "методу спостереження", де вчитель спостерігає за учнями під час фізичних занять та оцінює їх техніку, координацію рухів та активність.</label><br>
+  </div> 
+     <!-- Питання 8 -->
+  <div class="question">
+    <h3>Питання 8: Який підхід до розвитку міжособистісних навичок учнів можна застосувати вчителем фізичної культури?</h3>
+    <label><input type="radio" name="question8" value="a"> a. Використання  індивідуального наставництва, де вчитель працює з учнем один на один, допомагаючи йому розвивати міжособистісні навички через персоналізований підхід та індивідуальну підтримку.</label><br>
+    <label><input type="radio" name="question8" value="b"> b. Використання "методу рефлексії і самоаналізу", де учні регулярно оцінюють свої міжособистісні навички, аналізують свої дії та реакції, щоб самостійно вдосконалювати свою поведінку та взаємодію з іншими.</label><br>
+    <label><input type="radio" name="question8" value="c"> c. Сприяння співпраці, командній роботі та вирішенню завдань у групі</label><br>
+    <label><input type="radio" name="question8" value="d"> d. Використанння підходів, коли учнів самостійно розвивати міжособистісні навички без підтримки вчителя</label><br>
+  </div> 
+
+ <div class="question">
+<h1>3. Комунікаційні та міжособистісні навички</h1>
+  </div>
+  
+    <!-- Питання 9 -->
+  <div class="question">
+    <h3>Питання 9: Які навички комунікації важливі для вчителя фізичної культури під час роботи з учнями?</h3>
+    <label><input type="radio" name="question9" value="a"> a. Навички: вміння слухати та бути уважним до потреб учнів</label><br>
+    <label><input type="radio" name="question9" value="b"> b. Навички володіння великою кількістю спортивної інформації, що дозволяє вчителю ефективно спілкуватися з учнями на різні спортивні теми та надавати відповіді на їх запитання.</label><br>
+    <label><input type="radio" name="question9" value="c"> c. Навички використання різноманітних комунікаційних засобів та технологій, що дозволяє вчителю ефективно спілкуватися з учнями через сучасні засоби, такі як електронна пошта, соціальні мережі тощо.</label><br>
+    <label><input type="radio" name="question9" value="d"> d. Навички гнучкості та адаптації до різних стилів спілкування", щоб вчителю було можливо ефективно спілкуватися з учнями різних характерів та сприйняття і надавати їм індивідуальну підтримку та настанови.</label><br>
+  </div> 
+    
+    <!-- Питання 10 -->
+  <div class="question">
+    <h3>Питання 10: Ви уповноважені оцінювати учнів на їх практичних заняттях. Як Ви будете співпрацювати з батьками і у який спосіб, щоб покращити досягнення учнів?</h3>
+    <label><input type="radio" name="question10" value="a"> a. Запропонувати батькам рекомендації та ресурси, які можуть допомогти підтримувати активність і зацікавленість учнів у фізичній активності поза уроками.</label><br>
+    <label><input type="radio" name="question10" value="b"> b. Регулярне інформування батьків про досягнення та прогрес учнів</label><br>
+    <label><input type="radio" name="question10" value="c"> c. Організувати презентації чи семінари для батьків з теми, пов'язаної з фізичною культурою та здоровим способом життя, щоб підвищити їхню свідомість та активну підтримку учнів.</label><br>
+    <label><input type="radio" name="question10" value="d"> d. Організувати індивідуальні консультації з батьками, де можна обговорити актуальні питання, вислухати їхні проблеми та знаходити спільні рішення для покращення досягнень учнів.</label><br>
+  </div> 
+    
+    <!-- Питання 11 -->
+  <div class="question">
+    <h3>Питання 11: Як найкраще прищеплювати учням людські цінності?</h3>
+    <label><input type="radio" name="question11" value="a"> a. Ділитись знаннями про суспільство</label><br>
+    <label><input type="radio" name="question11" value="b"> b. Співпраця з батьками у формуванні цінностей</label><br>
+    <label><input type="radio" name="question11" value="c"> c. Поширювати знання про етичні цінності</label><br>
+    <label><input type="radio" name="question11" value="d"> d. Інтеграція в навчальну програму: Залучення на кожному уроці (по 15 хвилин) текстів, історій, дискусій та інших навчальних матеріалів, що сприяють розумінню та оцінці різних людських цінностей.</label><br>
+  </div> 
+
+    <!-- Питання 12 -->
+  <div class="question">
+    <h3>Питання 12: Які навички емоційного інтелекту є важливими для вчителя фізичної культури?</h3>
+    <label><input type="radio" name="question12" value="a"> a. Саморегуляція: Вчителю фізичної культури важливо мати навички контролю та управління своїми емоціями</label><br>
+    <label><input type="radio" name="question12" value="b"> b. Управління стомлюваністю: Розвиток стратегій самообліку та відновлення енергії, здатність ефективно керувати власними ресурсами та стресом.</label><br>
+    <label><input type="radio" name="question12" value="c"> c. Вміння розпізнавати та керувати своїми емоціями та емоціями учнів</label><br>
+    <label><input type="radio" name="question12" value="d"> d. Здатність створювати стимулююче навчальне середовище</label><br>
+  </div> 
+
+ <div class="question">
+<h1>4. Етика та професійна поведінка</h1>
+  </div>
+
+    <!-- Питання 13 -->
+  <div class="question">
+    <h3>Питання 13: Які принципи етики та професійної поведінки є важливими для вчителя фізичної культури?</h3>
+    <label><input type="radio" name="question13" value="a"> a. Тривале застосування справедливих стандартів у оцінюванні</label><br>
+    <label><input type="radio" name="question13" value="b"> b. Професійна компетентність: Постійне підвищення рівня знань та навичок у галузі фізичної культури, орієнтація на наукові основи та сучасні методи навчання.</label><br>
+    <label><input type="radio" name="question13" value="c"> c. Розуміння та прийняття різних культурних, соціальних та індивідуальних особливостей учнів</label><br>
+    <label><input type="radio" name="question13" value="d"> d. Дотримання конфіденційності та повагу прав та меж учнів</label><br>
+  </div> 
+
+    <!-- Питання 14 -->
+  <div class="question">
+    <h3>Питання 14: Який підхід до взаємодії із колегами є етично правильним для вчителя фізичної культури?</h3>
+    <label><input type="radio" name="question14" value="a"> a. Встановлення довіри до колег</label><br>
+    <label><input type="radio" name="question14" value="b"> b. Конкуренція та прагнення до переваги</label><br>
+    <label><input type="radio" name="question14" value="c"> c. Колаборація, співробітництво та взаємопідтримка</label><br>
+    <label><input type="radio" name="question14" value="d"> d. Конструктивна критика: Надання конструктивних зауважень іншим колегам з метою покращення їхньої роботи</label><br>
+  </div> 
+
+    <!-- Питання 15 -->
+  <div class="question">
+    <h3>Питання 15: Яким чином вчитель фізичної культури може продемонструвати професійну відповідальність?</h3>
+    <label><input type="radio" name="question15" value="a"> a. Забезпечення безпеки: Вчитель має бути відповідальним за безпеку учнів під час фізичних занять, вживати необхідні заходи для запобігання травмам та надавати належну догляду.</label><br>
+    <label><input type="radio" name="question15" value="b"> b. Систематичне оновлення знань: Вчителю слід відповідально стежити за оновленням своїх знань у галузі фізичної культури, ознайомлюватися з новими дослідженнями, методиками та інноваціями.</label><br>
+    <label><input type="radio" name="question15" value="c"> c. Професійна етика.</label><br>
+    <label><input type="radio" name="question15" value="d"> d. Точне та своєчасне виконання своїх обов'язків</label><br>
+  </div>       
+
+    <!-- Питання 16 -->
+  <div class="question">
+    <h3>Питання 16: Які норми та правила безпеки повинні дотримуватись вчителем фізичної культури?</h3>
+    <label><input type="radio" name="question16" value="a"> a. Врахування фізичних обмежень учнів</label><br>
+    <label><input type="radio" name="question16" value="b"> b. Безпека учнів у водних об'єктах</label><br>
+    <label><input type="radio" name="question16" value="c"> c. Забезпечення безпечного середовища для учнів та запобігання травмам</label><br>
+    <label><input type="radio" name="question16" value="d"> d. Знання та дотримання правил управління обладнанням</label><br>
+  </div> 
+  
+  <div class="question">
+<h1>5. Практичні навички</h1>
+  </div>       
+  
+    <!-- Питання 17 -->
+  <div class="question">
+    <h3>Питання 17: Які практичні навички необхідні вчителю фізичної культури для організації та проведення уроків?</h3>
+    <label><input type="radio" name="question17" value="a"> a. Вміння працювати в команді: Вчителю фізичної культури потрібно вміти співпрацювати з іншими педагогами, тренерами та адміністрацією школи.</label><br>
+    <label><input type="radio" name="question17" value="b"> b. Оновлення знань: Вчителю потрібно постійно підтримувати свої знання у галузі фізичної культури, слідкувати за новинками та тенденціями, а також брати участь у професійних курсах і тренінгах для постійного розвитку.</label><br>
+    <label><input type="radio" name="question17" value="c"> c. Володіння різноманітними вправами та вміння складати програми занять</label><br>
+    <label><input type="radio" name="question17" value="d"> d. Ввміння працювати зі спортивним обладнанням та інвентарем</label><br>
+  </div>       
+  
+    <!-- Питання 18 -->
+  <div class="question">
+    <h3>Питання 18: Які методи та прийоми фізичної підготовки можуть бути застосовані вчителем фізичної культури?</h3>
+    <label><input type="radio" name="question18" value="a"> a. Метод тренування з використанням спортивного обладнання</label><br>
+    <label><input type="radio" name="question18" value="b"> b. Метод ігрового тренування</label><br>
+    <label><input type="radio" name="question18" value="c"> c. Метод варіативного тренування</label><br>
+    <label><input type="radio" name="question18" value="d"> d. Різноманітні вправи, ігри та тренування, адаптовані до рівня та віку учнів</label><br>
+  </div>       
+  
+    <!-- Питання 19 -->
+  <div class="question">
+    <h3>Питання 19: Які навички техніки безпеки та першої допомоги повинен мати вчитель фізичної культури?</h3>
+    <label><input type="radio" name="question19" value="a"> a. Навички першої допомоги: Вчитель повинен мати базові навички першої допомоги, такі як надання допомоги при травмах, розуміння методів зупинки кровотечі, </label><br>
+    <label><input type="radio" name="question19" value="b"> b. Навички виклику екстреної медичної допомоги</label><br>
+    <label><input type="radio" name="question19" value="c"> c. Вміння запобігати травмам, здійснювати контроль та надавати першу допомогу</label><br>
+    <label><input type="radio" name="question19" value="d"> d. Використання лише небезпечних вправ та ігнорування можливих ризиків</label><br>
+  </div>       
+  
+    <!-- Питання 20 -->
+  <div class="question">
+    <h3>Питання 20: Які навички та знання у сфері спортивної підготовки необхідні вчителю фізичної культури?</h3>
+    <label><input type="radio" name="question20" value="a"> a. Вчителю необхідно мати знання про здоров'я та безпеку, пов'язану з фізичною активністю.</label><br>
+    <label><input type="radio" name="question20" value="b"> b. Вчителю слід мати навички аналізу та оцінки спортивних досягнень учнів. </label><br>
+    <label><input type="radio" name="question20" value="c"> c. Фізична підготовка: Вчителю фізичної культури слід мати власну високу фізичну підготовку, щоб бути прикладом для учнів і здатним проводити демонстраційні вправи та тренування. Він повинен мати вміння виконувати різні фізичні вправи та розвивати свої фізичні навички.</label><br>
+    <label><input type="radio" name="question20" value="d"> d. Знання правил та техніки різних видів спорту та вміння проводити спортивні заходи</label><br>
+  </div>       
+    
+
+  <!-- Додайте сюди більше питань, якщо необхідно -->
+
+  <button onclick="saveAnswers()">Зберегти відповіді</button>
+
+  <div id="result"></div>
+
+  <script>
+    function saveAnswers() {
+	  var specialty = document.getElementById("specialty").value;
+      var alias = document.getElementById("alias").value;
+      var age = document.getElementById("age").value;
+      var gender = document.querySelector('input[name="gender"]:checked').value;
+      var yearOfStudy = document.getElementById("yearOfStudy").value;
+      var futureSpecialization = document.querySelector('input[name="futureSpecialization"]:checked').value;
+      
+      var question1 = document.querySelector('input[name="question1"]:checked').value;
+      var question2 = document.querySelector('input[name="question2"]:checked').value;
+      var question3 = document.querySelector('input[name="question3"]:checked').value;
+      var question4 = document.querySelector('input[name="question4"]:checked').value;
+      var question5 = document.querySelector('input[name="question5"]:checked').value;
+      var question6 = document.querySelector('input[name="question6"]:checked').value;
+      var question7 = document.querySelector('input[name="question7"]:checked').value;
+      var question8 = document.querySelector('input[name="question8"]:checked').value;
+      var question9 = document.querySelector('input[name="question9"]:checked').value;
+      var question10 = document.querySelector('input[name="question10"]:checked').value;
+      var question11 = document.querySelector('input[name="question11"]:checked').value;
+      var question12 = document.querySelector('input[name="question12"]:checked').value;
+      var question13 = document.querySelector('input[name="question13"]:checked').value;
+      var question14 = document.querySelector('input[name="question14"]:checked').value;
+      var question15 = document.querySelector('input[name="question15"]:checked').value;
+      var question16 = document.querySelector('input[name="question16"]:checked').value;
+      var question17 = document.querySelector('input[name="question17"]:checked').value;
+      var question18 = document.querySelector('input[name="question18"]:checked').value;
+      var question19 = document.querySelector('input[name="question19"]:checked').value;
+      var question20 = document.querySelector('input[name="question20"]:checked').value;
+
+      var thankYou = "Дякуємо!";
+
+      // Вычисляем результаты - додати правильні відповіді у вигляді літер типу "c" або ін
+      var answer1 = (question1 === "a") ? 1 : 0;
+      var answer2 = (question2 === "b") ? 1 : 0;
+      var answer3 = (question3 === "d") ? 1 : 0;
+      var answer4 = (question4 === "d") ? 1 : 0;
+      var answer5 = (question5 === "d") ? 1 : 0;
+      var answer6 = (question6 === "c") ? 1 : 0;
+      var answer7 = (question7 === "b") ? 1 : 0;
+      var answer8 = (question8 === "c") ? 1 : 0;
+      var answer9 = (question9 === "a") ? 1 : 0;
+      var answer10 = (question10 === "b") ? 1 : 0;
+      var answer11 = (question11 === "c") ? 1 : 0;
+      var answer12 = (question12 === "a") ? 1 : 0;
+      var answer13 = (question13 === "d") ? 1 : 0;
+      var answer14 = (question14 === "c") ? 1 : 0;
+      var answer15 = (question15 === "d") ? 1 : 0;
+      var answer16 = (question16 === "c") ? 1 : 0;
+      var answer17 = (question17 === "c") ? 1 : 0;
+      var answer18 = (question18 === "d") ? 1 : 0;
+      var answer19 = (question19 === "c") ? 1 : 0;
+      var answer20 = (question20 === "d") ? 1 : 0;
+
+      // Общая сумма ответов
+      var totalSum = answer1 + answer2 + answer3 + answer4 + answer5 + answer6 + answer7 + answer8 + answer9 + answer10 + answer11 + answer12 + answer13 + answer14 + answer15 + answer16 + answer17 + answer18 + answer19 + answer20;
+
+      // Вычисляем значение для нового столбца "Total"
+      var csvContent = "data:text/csv;charset=utf-8,"
+        + "Alias,Age,Gender,Year of Study,Specialty,Future Specialization,Question 1,Question 2,Question 3,Question 4,Question 5,Question 6,Question 7,Question 8,Question 9,Question 10,Question 11,Question 12,Question 13,Question 14,Question 15,Question 16,Question 17,Question 18,Question 19,Question 20,Answer 1,Answer 2,Answer 3,Answer 4,Answer 5,Answer 6,Answer 7,Answer 8,Answer 9,Answer 10,Answer 11,Answer 12,Answer 13,Answer 14,Answer 15,Answer 16,Answer 17,Answer 18,Answer 19,Answer 20,Total\n"
+        + alias + "," + age + "," + gender + "," + yearOfStudy + "," + specialty + "," + futureSpecialization + ","
+        + question1 + "," + question2 + "," + question3 + "," + question4 + "," + question5 + "," + question6 + "," + question7 + "," + question8 + "," + question9 + "," + question10 + "," + question11 + "," + question12 + "," + question13 + "," + question14 + "," + question15 + "," + question16 + "," + question17 + "," + question18 + "," + question19 + "," + question20 + "," + answer1 + "," + answer2 + "," + answer3 + "," + answer4 + "," + answer5 + "," + answer6 + "," + answer7 + "," + answer8 + "," + answer9 + "," + answer10 + "," + answer11 + "," + answer12 + "," + answer13 + "," + answer14 + "," + answer15 + "," + answer16 + "," + answer17 + "," + answer18 + "," + answer19 + "," + answer20 + "," + totalSum;
+
+      // Вычисляем значение для нового столбца "Calculated"
+      var calculatedValue = (totalSum / 20).toFixed(2);
+
+      // Вычисляем значение оценок по 5-ти бальной системе для нового столбца "Rating"
+      var rating;
+      if (calculatedValue > 0.85 && calculatedValue <= 1) {
+        rating = "5";
+      } else if (calculatedValue > 0.65 && calculatedValue <= 0.85) {
+        rating = "4";
+      } else if (calculatedValue > 0.45 && calculatedValue <= 0.65) {
+        rating = "3";
+      } else if (calculatedValue >= 0 && calculatedValue <= 0.45) {
+        rating = "2";
+      } else {
+        rating = "2";
+      }
+
+  // Создаем строку CSV с новыми столбцами  "Calculated" "Rating"
+  var csvContent = "data:text/csv;charset=utf-8,"
+    + "Alias,Age,Gender,Year of Study,Specialty,Future Specialization,Question 1,Question 2,Question 3,Question 4,Question 5,Question 6,Question 7,Question 8,Question 9,Question 10,Question 11,Question 12,Question 13,Question 14,Question 15,Question 16,Question 17,Question 18,Question 19,Question 20,Answer 1,Answer 2,Answer 3,Answer 4,Answer 5,Answer 6,Answer 7,Answer 8,Answer 9,Answer 10,Answer 11,Answer 12,Answer 13,Answer 14,Answer 15,Answer 16,Answer 17,Answer 18,Answer 19,Answer 20,Total,Calculated,Rating\n"
+     + alias + "," + age + "," + gender + "," + yearOfStudy + "," + specialty + "," + futureSpecialization + ","
+        + question1 + "," + question2 + "," + question3 + "," + question4 + "," + question5 + "," + question6 + "," + question7 + "," + question8 + "," + question9 + "," + question10 + "," + question11 + "," + question12 + "," + question13 + "," + question14 + "," + question15 + "," + question16 + "," + question17 + "," + question18 + "," + question19 + "," + question20 + "," + answer1 + "," + answer2 + "," + answer3 + "," + answer4 + "," + answer5 + "," + answer6 + "," + answer7 + "," + answer8 + "," + answer9 + "," + answer10 + "," + answer11 + "," + answer12 + "," + answer13 + "," + answer14 + "," + answer15 + "," + answer16 + "," + answer17 + "," + answer18 + "," + answer19 + "," + answer20 + "," + totalSum + "," + calculatedValue + "," + rating;
+  
+      var encodedUri = encodeURI(csvContent);
+      var link = document.createElement("a");
+      link.setAttribute("href", encodedUri);
+      link.setAttribute("download", "answers.csv");
+      document.body.appendChild(link);
+
+      link.click();
+
+      alert(thankYou);
+
+// Выводим результаты на страницу
+var resultDiv = document.getElementById("result");
+var resultHtml =
+  "<h3>Результати. Перевіряйте свої знання</h3>" +
+  "<table>" +
+  "<tr><td><h2>Інформація про респондента</h2</td></tr>" +
+  "<tr><td>Псевдонім:</td><td>" + alias + "</td></tr>" +
+  "<tr><td>Вік:</td><td>" + age + "</td></tr>" +
+  "<tr><td>Стать:</td><td>" + gender + "</td></tr>" +
+  "<tr><td>Рік навчання:</td><td>" + yearOfStudy + "</td></tr>" +
+  "<tr><td>Cпеціальність:</td><td>" + specialty + "</td></tr>" +
+  "<tr><td>Тест:</td><td>" + futureSpecialization + "</td></tr>" +
+  "<tr><td><h2>Відповіді на питання</h2</td></tr>" +
+  "<tr><td>Результат питання 1:</td><td>" + question1 + "</td><td>Правильна відповідь на питання 1:</td><td>" + (question1 === "a" ? "Так" : "Ні") + "</td><td>a. Принцип прогресивного навантаження</td></tr>" +
+  "<tr><td>Результат питання 2:</td><td>" + question2 + "</td><td>Правильна відповідь на питання 2:</td><td>" + (question2 === "b" ? "Так" : "Ні") + "</td><td>b. Розуміння будови та функціонування органів та систем організму</td></tr>" +
+  "<tr><td>Результат питання 3:</td><td>" + question3 + "</td><td>Правильна відповідь на питання 3:</td><td>" + (question3 === "d" ? "Так" : "Ні") + "</td><td>d. Методика диференціації та індивідуалізації навчання</td></tr>" +
+  "<tr><td>Результат питання 4:</td><td>" + question4 + "</td><td>Правильна відповідь на питання 4:</td><td>" + (question4 === "d" ? "Так" : "Ні") + "</td><td>d. Правила та техніка плавання</td></tr>" +
+  "<tr><td>Результат питання 5:</td><td>" + question5 + "</td><td>Правильна відповідь на питання 5:</td><td>" + (question5 === "d" ? "Так" : "Ні") + "</td><td>d. Різноманітність методів навчання та активне залучення учнів до навчального процесу</td></tr>" +
+  "<tr><td>Результат питання 6:</td><td>" + question6 + "</td><td>Правильна відповідь на питання 6:</td><td>" + (question6 === "c" ? "Так" : "Ні") + "</td><td>c. Створення цікавих та різноманітних уроків з ігровими елементами</td></tr>" +
+  "<tr><td>Результат питання 7:</td><td>" + question7 + "</td><td>Правильна відповідь на питання 7:</td><td>" + (question7 === "b" ? "Так" : "Ні") + "</td><td>b. Різноманітність методів контролю, включаючи практичні завдання, тестування та нагляд за виконанням вправ</td></tr>" +
+  "<tr><td>Результат питання 8:</td><td>" + question8 + "</td><td>Правильна відповідь на питання 8:</td><td>" + (question8 === "c" ? "Так" : "Ні") + "</td><td>c. Сприяння співпраці, командній роботі та вирішенню завдань у групі</td></tr>" +
+  "<tr><td>Результат питання 9:</td><td>" + question9 + "</td><td>Правильна відповідь на питання 9:</td><td>" + (question9 === "a" ? "Так" : "Ні") + "</td><td>a. Вміння слухати та бути уважним до потреб учнів</td></tr>" +
+  "<tr><td>Результат питання 10:</td><td>" + question10 + "</td><td>Правильна відповідь на питання 10:</td><td>" + (question10 === "b" ? "Так" : "Ні") + "</td><td>b. Регулярне інформування батьків про досягнення та прогрес учнів</td></tr>" +
+  "<tr><td>Результат питання 11:</td><td>" + question11 + "</td><td>Правильна відповідь на питання 11:</td><td>" + (question11 === "c" ? "Так" : "Ні") + "</td><td>c. Застосування методів медіації, заохочення діалогу та пошук компромісних рішень</td></tr>" +
+  "<tr><td>Результат питання 12:</td><td>" + question12 + "</td><td>Правильна відповідь на питання 12:</td><td>" + (question12 === "a" ? "Так" : "Ні") + "</td><td>a. Вміння розпізнавати та керувати своїми емоціями та емоціями учнів</td></tr>" +
+  "<tr><td>Результат питання 13:</td><td>" + question13 + "</td><td>Правильна відповідь на питання 13:</td><td>" + (question13 === "d" ? "Так" : "Ні") + "</td><td>d. Дотримання конфіденційності та повагу прав та меж учнів</td></tr>" +
+  "<tr><td>Результат питання 14:</td><td>" + question14 + "</td><td>Правильна відповідь на питання 14:</td><td>" + (question14 === "c" ? "Так" : "Ні") + "</td><td>c. Колаборація, співробітництво та взаємопідтримка</td></tr>" +
+  "<tr><td>Результат питання 15:</td><td>" + question15 + "</td><td>Правильна відповідь на питання 15:</td><td>" + (question15 === "d" ? "Так" : "Ні") + "</td><td>d. Точне та своєчасне виконання своїх обов'язків</td></tr>" +
+  "<tr><td>Результат питання 16:</td><td>" + question16 + "</td><td>Правильна відповідь на питання 16:</td><td>" + (question16 === "c" ? "Так" : "Ні") + "</td><td> c. Забезпечення безпечного середовища для учнів та запобігання травмам</td></tr>" +
+  "<tr><td>Результат питання 17:</td><td>" + question17 + "</td><td>Правильна відповідь на питання 17:</td><td>" + (question17 === "c" ? "Так" : "Ні") + "</td><td>c. Володіння різноманітними вправами та вміння складати програми занять</td></tr>" +
+  "<tr><td>Результат питання 18:</td><td>" + question18 + "</td><td>Правильна відповідь на питання 18:</td><td>" + (question18 === "d" ? "Так" : "Ні") + "</td><td> d. Різноманітні вправи, ігри та тренування, адаптовані до рівня та віку учнів</td></tr>" +
+  "<tr><td>Результат питання 19:</td><td>" + question19 + "</td><td>Правильна відповідь на питання 19:</td><td>" + (question19 === "c" ? "Так" : "Ні") + "</td><td>c. Вміння запобігати травмам, здійснювати контроль та надавати першу допомогу</td></tr>" +
+  "<tr><td>Результат питання 20:</td><td>" + question20 + "</td><td>Правильна відповідь на питання 20:</td><td>" + (question20 === "d" ? "Так" : "Ні") + "</td><td> d. Знання правил та техніки різних видів спорту та вміння проводити спортивні заходи</td></tr>" + 
+  "<tr><td><h2>Підсумки</h2></td><td></td><td></td><td></td></tr>" + 
+  "<tr><td>Загальна кількість балів:</td><td>" + totalSum + "</td><td></td><td></td><td></td></tr>" +
+  "<tr><td>Розрахункове значення:</td><td>" + calculatedValue + "</td><td></td><td></td><td></td></tr>" +
+//   "<tr><td>Оцінка:</td><td>" + rating + "</td><td></td><td></td><td></td></tr>" +
+  "</table>";
+resultDiv.innerHTML = resultHtml;
+
+}
+</script>
+</body>
+</html>
